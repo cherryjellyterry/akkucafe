@@ -1,0 +1,21 @@
+:root{
+    --font-bold:700;
+    --font-medium:400;
+    --font-light:300;
+    --main-color:#F9B200;
+    --subcolor:#993520;
+    --inactive-color:#D9D9D9;
+    --gray-color: #B8B8B8;
+    --light-gray-color : #ECECEC;
+    --font-size-pc:20px;
+    --font-size-tab:18px;
+    --font-size-mob:14px;
+    --small-space:1rem;
+    /* : 같은 맥락인데 구분하는 여백 */
+    --middle-space:2rem;
+    /* : 다른 맥락인데 구분하는 여백 */
+    --big-space:3.5rem;
+    /* : 영역의 위아래 여백 */
+    --huge-space:7rem;
+    /* : 영역간 여백 */
+}

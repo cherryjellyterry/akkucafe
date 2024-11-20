@@ -1,0 +1,338 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>커피이야기</title>
+    <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="./css/variable.css">
+    <link rel="stylesheet" href="./css/common.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/media.css">
+    <link rel="stylesheet" href="./css/scroll.css">
+    <link rel="stylesheet" as="style" crossorigin href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard.min.css"/>
+    <script src="./js/header.js"></script>
+    <script src="./js/story_coffee.js"></script>
+    <!-- swiper JS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+</head>
+<body>
+    <header class="pc_header pc">
+        <div class="commonFrame">
+            <h1 class="logo">
+                <a href="./index.html">
+                    <img src="./img/logo_color.svg" alt="카페아쿠 로고">
+                </a>
+            </h1>
+
+            <!-- 메뉴단 -->
+            <ul class="gnb">
+                <li>
+                    <a href="./cafeintro.html">아쿠커피 소개</a>
+                    <ul>
+                        <li>
+                            <a href="./cafeintro.html">AKKU COFFEE</a>
+                        </li>
+                        <li>
+                            <a href="#">매장</a>
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="./coffeestory.html">메뉴이야기</a>
+                    <ul>
+                        <li>
+                            <a href="./coffeestory.html">커피이야기</a>
+                        </li>
+                        <li>
+                            <a href="#">디저트이야기</a>
+                        </li>
+                        <li>
+                            <a href="#">델리이야기</a>
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="./pairingplant.html">브랜드 지원</a>
+                    <ul>
+                        <li>
+                            <a href="./pairingplant.html">아쿠 페어링 플랜트</a>
+                        </li>
+                        <li>
+                            <a href="./dessertplant.html">아쿠 디저트 플랜트</a>
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#">가맹점 창업 안내</a>
+                    <ul>
+                        <li>
+                            <a href="#">가맹점 개설 안내</a>
+                        </li>
+                        <li>
+                            <a href="#">창업설명회</a>
+                        </li>
+                        <li>
+                            <a href="./consult.html">온라인 창업상담신청</a>
+                        </li>
+                        <li>
+                            <a href="./faq.html">FAQ</a>
+                        </li>
+                        <li>
+                            <a href="#">가맹점 전용 금융상품</a>
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#">새소식 & 공지</a>
+                    <ul>
+                        <li>
+                            <a href="#">공지사항</a>
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+    </header>
+    <div class="mobile_header mo">
+        <h1 class="logo_mo"><a href="./index.html"><img src="./img/logo_color.svg" alt="모바일로고"></a></h1>
+        <span id="btn_gnb"><img src="./img/mo_gnb_offnen.svg" alt="메뉴 열기 버튼"></span>
+        <div class="hidden_gnb">
+            <section class="hidden_gnb_top">
+                <h1 class="logo"><a href="./index.html">
+                    <img src="./img/logo_color.svg" alt="카페아쿠 로고">
+                </a></h1>
+                <span id="btn_close_gnb">
+                    <img src="./img/gnb_geschlossen.svg" alt="닫기버튼">
+                </span>
+            </section>
+            <section class="mo_gnb_wrap">
+                <ul class="gnb_mo">
+                    <li>
+                        <a href="./cafeintro.html">아쿠커피 소개</a>
+                        <ul>
+                            <li>
+                                <a href="./cafeintro.html">AKKU COFFEE</a>
+                            </li>
+                            <li>
+                                <a href="#">매장</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="./coffeestory.html">메뉴이야기</a>
+                        <ul>
+                            <li>
+                                <a href="./coffeestory.html">커피이야기</a>
+                            </li>
+                            <li>
+                                <a href="#">디저트이야기</a>
+                            </li>
+                            <li>
+                                <a href="#">델리이야기</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="./pairingplant.html">브랜드 지원</a>
+                        <ul>
+                            <li>
+                                <a href="./pairingplant.html">아쿠 페어링 플랜트</a>
+                            </li>
+                            <li>
+                                <a href="./dessertplant.html">아쿠 디저트 플랜트</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#">가맹점 창업 안내</a>
+                        <ul>
+                            <li>
+                                <a href="#">가맹점 개설 안내</a>
+                            </li>
+                            <li>
+                                <a href="#">창업설명회</a>
+                            </li>
+                            <li>
+                                <a href="./consult.html">온라인 창업상담신청</a>
+                            </li>
+                            <li>
+                                <a href="./faq.html">FAQ</a>
+                            </li>
+                            <li>
+                                <a href="#">가맹점 전용 금융상품</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#">새소식 & 공지</a>
+                        <ul>
+                            <li>
+                                <a href="#">공지사항</a>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+            </section>
+            <section class="hidden_gnb_bottom">
+                <a href="#" class="btn_startup_1">창업안내 바로가기</a>
+                <ul class="sns_gnb">
+                    <li><a href="#" target="_blank"><img src="./img/facebook_gnb.svg" alt="페이스북"></a></li>
+                    <li><a href="#" target="_blank"><img src="./img/x_gnb.svg" alt="X"></a></li>
+                    <li><a href="#" target="_blank"><img src="./img/youtube_gnb.svg" alt="유투브"></a></li>
+                    <li><a href="#" target="_blank"><img src="./img/insta_gnb.svg" alt="인스타그램"></a></li>
+                </ul>
+            </section>
+        </div>
+    </div>
+    <!-- 여기까지 헤더 -->
+
+    <div class="hero hero_coffeestory">
+        <div class="modal"></div>
+        <div class="hero_contents">
+            <h2>커피 이야기</h2>
+            <p>당신만을 위한 특별한 커피, 오늘의 한 잔을 만나보세요.</p>
+        </div>
+    </div>
+
+    <main>
+        <div class="con1_desc_coffeestory commonFrame">
+            <h3>COFFEE</h3>
+            <p>매일의 기분을 바꾸는, 정성 가득한 한 잔의 커피</p>
+        </div>
+
+        <div class="commonFrame station5 swiper">
+            <ul class="train swiper-wrapper">
+                <li class="swiper-slide">
+                    <figure><img src="./img/menu/americano.jpg" alt="아메리카노"></figure>
+                    <div class="menuname">
+                        <h4>아메리카노</h4>
+                        <h5><enp>Americano</enp></h5>
+                    </div>
+                    <p><bs>카페 아쿠의 아메리카노는 3가지 원두로, 원하는 풍미를 선택해 즐길 수 있습니다.</bs></p>
+                </li>
+                <li class="swiper-slide">
+                    <figure><img src="./img/menu/espresso.jpg" alt="에스프레소"></figure>
+                    <div class="menuname">
+                        <h4>에스프레소</h4>
+                        <h5><enp>Espresso</enp></h5>
+                    </div>
+                    <p><bs>카페 아쿠의 고급 블렌드 원두로 내린 에스프레소. 짙고 농후한 풍미로 커피의 정수를 느껴보세요.</bs></p>
+                </li>
+                <li class="swiper-slide">
+                    <figure><img src="./img/menu/latte.jpg" alt="카페라떼"></figure>
+                    <div class="menuname">
+                        <h4>카페라떼</h4>
+                        <h5><enp>Caffè Latte</enp></h5>
+                    </div>
+                    <p><bs>부드러운 우유와 깊은 에스프레소가 만나 완성된 카페 아쿠의 기본 라떼. 누구나 부담 없이 즐길 수 있는 클래식한 선택입니다.</bs></p>
+                </li>
+                <li class="swiper-slide">
+                    <figure><img src="./img/menu/signiture_latte.jpg" alt="시그니처라떼"></figure>
+                    <div class="menuname">
+                        <h4>시그니처라떼</h4>
+                        <h5><enp>Caffè Latte</enp></h5>
+                    </div>
+                    <p><bs>부드러운 우유와 깊은 에스프레소가 만나 완성된 카페 아쿠의 기본 라떼. 누구나 부담 없이 즐길 수 있는 클래식한 선택입니다.</bs></p>
+                </li>
+                <li class="swiper-slide">
+                    <figure><img src="./img/menu/caramelMacchiato.jpg" alt="카라멜 마끼아또"></figure>
+                    <div class="menuname">
+                        <h4>카라멜 마끼아또</h4>
+                        <h5><enp>Caramel Macchiato</enp></h5>
+                    </div>
+                    <p><bs>달콤한 카라멜 시럽이 더해져 부드럽고 풍부한 맛이 돋보이는 한 잔. 달콤함과 커피의 조화가 입안을 감싸줍니다.</bs></p>
+                </li>
+                <li class="swiper-slide">
+                    <figure><img src="./img/menu/einschpenner.jpg" alt="아인슈페너"></figure>
+                    <div class="menuname">
+                        <h4>아인슈페너</h4>
+                        <h5><enp>Einspänner</enp></h5>
+                    </div>
+                    <p><bs>풍성한 크림과 진한 에스프레소의 환상적인 조합. 부드러운 크림과 쌉쌀한 커피가 완벽하게 어우러집니다.</bs></p>
+                </li>
+                <li class="swiper-slide">
+                    <figure><img src="./img/menu/icecreamlatte.jpg" alt="아이스크림라떼"></figure>
+                    <div class="menuname">
+                        <h4>아이스크림라떼</h4>
+                        <h5><enp>Icecream Latte</enp></h5>
+                    </div>
+                    <p><bs>진한 커피와 부드러운 우유 위에 아이스크림 한 스쿱이 더해져 특별한 디저트처럼 즐길 수 있는 메뉴입니다.</bs></p>
+                </li>
+                <li class="swiper-slide">
+                    <figure><img src="./img/menu/iced_vanilla_latte.jpg" alt="바닐라라떼"></figure>
+                    <div class="menuname">
+                        <h4>바닐라라떼</h4>
+                        <h5><enp>Vanilla Latte</enp></h5>
+                    </div>
+                    <p><bs>카페 아쿠의 바닐라 라떼는 진한 바닐라 풍미가 돋보이는 오리지널 버전과 당을 줄여 깔끔한 맛을 즐길 수 있는 라이트 버전으로 취향에 따라 선택할 수 있습니다.</bs></p>
+                </li>
+                <li class="swiper-slide">
+                    <figure><img src="./img/menu/soylatte.jpg" alt="두유라떼"></figure>
+                    <div class="menuname">
+                        <h4>두유라떼</h4>
+                        <h5><enp>Soymilk Latte</enp></h5>
+                    </div>
+                    <p><bs>고소한 두유와 진한 에스프레소가 어우러진 건강한 라떼. 깔끔하고 부담 없이 즐길 수 있는 선택입니다.</bs></p>
+                </li>
+                <li class="swiper-slide">
+                    <figure><img src="./img/menu/sweetMilkLatte.jpg" alt="연유라떼"></figure>
+                    <div class="menuname">
+                        <h4>연유라떼</h4>
+                        <h5><enp>Condensed Milk Latte</enp></h5>
+                    </div>
+                    <p><bs>달콤하고 부드러운 연유가 더해져 진한 달콤함을 느낄 수 있는 라떼. 커피와 함께 깊은 달콤함을 즐겨보세요.</bs></p>
+                </li>
+                <li class="swiper-slide">
+                    <figure><img src="./img/menu/affogato.jpg" alt="아포가토"></figure>
+                    <div class="menuname">
+                        <h4>아포가토</h4>
+                        <h5><enp>Affogato</enp></h5>
+                    </div>
+                    <p><bs>쌉쌀한 에스프레소에 아이스크림 한 스쿱을 얹어 완성한 디저트 같은 커피. 커피와 달콤함의 조화를 경험해보세요.</bs></p>
+                </li>
+            </ul>
+            <div class="swiper-pagination"></div>
+        </div>
+    </main>
+    
+
+    <footer>
+        <div class="commonFrame">
+            <div class="info_foot">
+                <ul class="foot_1">
+                    <li><a href="#"><h5>이용약관</h5></a></li>
+                    <li><a href="#"><h5>개인정보처리방침</h5></a></li>
+                    <li><a href="#"><h5>위치기반서비스 이용약관</h5></a></li>
+                    <li><a href="#"><h5>이메일 무단수집거부</h5></a></li>
+                </ul>
+                <ul class="foot_2">
+                    <li>
+                        <ul>
+                            <li>대표이사 : 안태리</li>
+                            <li>개인정보보호책임자 : 정현진</li>
+                            <li>사업자등록번호 : 123-45-67890</li>
+                        </ul>
+                    </li>
+                    <li>통신판매업종신고종 : <br>제2018-테스트-0303호</li>
+                    <li>대표이메일 : helpmaster@akku.co.kr</li>
+                </ul>
+                <section>
+                    <p>본 홈페이지는 취업목적의 <br>포트폴리오용으로 제작되었습니다.</p>
+                    <p>Web Publisher 안태리</p>
+                </section>
+            </div>
+            <div class="btn_foot">
+                <ul class="sns">
+                    <li><a href="#"><img src="./img/facebook.svg" alt="페이스북"></a></li>
+                    <li><a href="#"><img src="./img/twitter.svg" alt="X"></a></li>
+                    <li><a href="#"><img src="./img/youtube.svg" alt="유투브"></a></li>
+                    <li><a href="#"><img src="./img/insta.svg" alt="인스타그램"></a></li>
+                </ul>
+                <a href="./index.html" class="logo_foot"><img src="./img/logo_black.svg" alt="카페아쿠푸터로고"></a>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
