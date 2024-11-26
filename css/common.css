@@ -60,19 +60,48 @@ enp{
     color: var(--gray-color);
 }
 
-[type="checkbox"]{
-    width: 1rem;
+strong{
+    font-weight: var(--font-bold);
+}
+
+input[type="checkbox"]{
+    /* width: 1rem;
     height: 1rem;
     border: 1px solid var(--inactive-color);
-    accent-color: var(--inactive-color);
+    accent-color: var(--inactive-color); */
+    display: none;
 }
+
+label.checkbox_label{
+    /* border: 1px solid red; */
+    /* width: 1rem; */
+    /* height: 1rem; */
+    display: inline-flex;
+    /* flex 컨테이너가 inline태그처럼 포함하는 컨텐츠만큼의 너비를 갖게되는 형태 */
+    gap: 0.5rem;
+    align-items: center;
+    justify-content: center;
+}
+
+.custom_checkbox{
+    border: 1px solid var(--inactive-color);
+    display: block;
+    width: 1rem;
+    height: 1rem;
+}
+
+input[type="checkbox"]:checked+.custom_checkbox{
+    background: url("../img/check_box_checked.svg") no-repeat 50% 50% / 90% auto;
+    
+}
+
 
 input[type=text]{
     min-width: 290px;
     padding: 0.75rem 1rem;
     font-size: 1rem;
     border: 1px solid #B0B0B0;
-    font-family: 'Pretendard',sans-serif;
+    /* font-family: 'Pretendard',sans-serif; */
 }
 
 input[type=tel]{
@@ -80,8 +109,26 @@ input[type=tel]{
     padding: 0.75rem 1rem;
     font-size: 1rem;
     border: 1px solid #B0B0B0;
-    font-family: 'Pretendard',sans-serif;
+    /* font-family: 'Pretendard',sans-serif; */
 }
+
+
+/* ///////페이지네이션///////// */
+
+.bbs_pagination{
+    display: flex;
+    justify-content: center;
+    gap: var(--small-space);
+}
+
+.bbs_pagination a.on{
+    color: var(--main-color);
+    text-decoration: underline;
+
+}
+
+/* ///////페이지네이션///////// */
+
 
 
 /* ////버튼스타일//// */
@@ -95,6 +142,7 @@ input[type=tel]{
     cursor: pointer;
     font-size: 0.9rem;
     transition: all 0.1s ease 0s;
+    background-color: transparent;
 }
 
 .btn_common:hover{
@@ -155,20 +203,24 @@ input[type=tel]{
     background-color: transparent;
 }
 
-.btn_common.modal{
+.btn_common.popup_btn{
     color: white;
     border: 2px solid white;
 }
 
-.btn_common.modal:hover{
+.btn_common.popup_btn:hover{
     background-color: var(--main-color);
     border: 2px solid var(--main-color);
 }
 
-.btn_common.modal:active{
+.btn_common.popup_btn:active{
     background-color: transparent;
     color: var(--main-color);
 }
+
+/* ////버튼스타일//// */
+
+
 
 /* ///////////////////헤더///////////////// */
 
@@ -184,7 +236,7 @@ header{
     width: 100%;
     box-shadow: 0px 2px 5px #0000006b;
     overflow: hidden;
-    transition: all 0.4s ease 0s;
+    /* transition: all 0.4s ease 0s; */
     z-index: 1000;
 }
 
@@ -208,10 +260,6 @@ header:before{
 header .commonFrame{
     display: flex;
     justify-content: space-between;
-}
-
-.logo{
-    /* border: 1px solid red; */
 }
 
 .logo a{
@@ -280,10 +328,6 @@ footer>.commonFrame{
     align-items: center;
 }
 
-.info_foot{
-    width: 36rem;
-}
-
 .foot_1{
     display: flex;
     justify-content: space-between;
@@ -304,6 +348,10 @@ footer>.commonFrame{
 .foot_2 ul{
     display: flex;
     justify-content: space-between;
+}
+
+.foot_2 ul>li{
+    margin-right: 1rem;
 }
 
 .info_foot{
@@ -377,6 +425,33 @@ footer>.commonFrame{
     opacity: 0.5;
 }
 
+.popup_modal{
+    z-index: 10000;
+    position: fixed;
+    opacity: 0;
+    pointer-events: none;
+    /* transition: all 0.3s ease 0s; */
+}
+
+.popup_modal.on{
+    opacity: 0.5;
+    pointer-events: auto;
+}
+
+.popup_check{
+    z-index: 11000;
+    width: 60%;
+    text-align: center;
+    opacity: 0;
+    pointer-events: none;
+    /* transition: all 0.3s ease 0s; */
+}
+
+.popup_check.on{
+    opacity: 1;
+    pointer-events: auto;
+}
+
 .hero_contents{
     color: white;
     display: flex;
@@ -390,4 +465,41 @@ footer>.commonFrame{
 
 .hero_contents h2{
     margin-bottom: 2rem;
+}
+
+/* /////히어로////// */
+
+
+/* /////옆에 따라다니는 애들///// */
+
+.fixed_menu{
+    position: fixed;
+    bottom: 1rem;
+    right: 1rem;
+    z-index: 1000;
+    transform: translateX(150%);
+    /* transition: all 0.5s ease 0s; */
+}
+
+.fixed_menu.on{
+    transform: translateX(0%);
+}
+
+.fixed_menu img{
+    height: 1.3rem;
+    object-fit: contain;
+}
+
+.fixed_menu a{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 2.8rem;
+    height: 2.8rem;
+    background-color: var(--main-color);
+    border-radius: 50%;
+}
+
+.fixed_menu li{
+    margin: 1rem 0;
 }

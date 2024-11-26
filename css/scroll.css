@@ -2,6 +2,7 @@
 
 /* 전체 스크롤바 */
 ::-webkit-scrollbar {
+    display: none;
     width: 0.8rem; /* 스크롤바의 너비 */
     height: 12px; /* 가로 스크롤바의 높이 */
 }

@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <script src="/js/notice.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+</head>
+<body>
+    <aside class="fixed_menu"></aside>
+    <div class="header_wrap"></div>
+
+    <div class="hero hero_notice">
+        <div class="modal"></div>
+        <div class="hero_contents">
+            <h2>공지사항</h2>
+            <p>고객님께 필요한 정보를 빠르고 정확하게 전달합니다.</p>
+        </div>
+    </div>
+    <main class="commonFrame">
+        
+        <h4 class="notice_view_title">카페 영업시간 변경 안내</h4>
+        <div class="option_bar notice_view">
+            <section class="view_info">
+                <span>카페 아쿠</span>
+                <span>2024-09-05 18:00:01</span>
+                <span>조회수 32</span>
+            </section>
+            <section class="option_admin button_view_admin">
+                <a href="/notice_write.html"><img src="/img/notice_write.svg" alt="글쓰기버튼"></a>
+                <a href="#"><img src="/img/notice_delete.svg" alt="지우기버튼" id="btn_notice_delete"></a>
+            </section>
+        </div>
+
+        <div class="notice_view_box">
+            <p>안녕하세요, CAFE AKKU입니다. <br><br>
+                고객 여러분의 편의를 위해 카페 영업시간이 아래와 같이 변경되었습니다. 
+                새로운 운영 시간은 월~토 오전 7시부터 오후 9시까지, 일요일은 오전 8시부터 오후 8시까지 입니다. <br><br>
+                항상 편안하고 즐거운 시간을 보내실 수 있도록 최선을 다하겠습니다. 
+                변동된 영업시간을 확인하시어 방문에 착오 없으시길 바랍니다. 감사합니다.</p>
+            </p>
+        </div>
+
+        <div class="notice_view_ctrl">
+            <a href="/notice_list.html" class="btn_common">목록</a>
+        </div>
+    </main>
+
+    <footer>
+        
+    </footer>
+
+
+    <div class="modal popup_modal"></div>
+    <div class="popup_check">
+        <div class="popup_title"><h4>삭제하시겠습니까?</h4></div>
+        <div class="popup_ctrl">
+            <span class="btn_common popup_btn" >네</span>
+            <span class="btn_common popup_btn">아니오</span>
+        </div>
+    </div>
+
+    <script src="./js/include.js"></script>
+</body>
+</html>
